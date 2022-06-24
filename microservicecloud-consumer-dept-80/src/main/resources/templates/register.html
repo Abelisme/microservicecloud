@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="sample-form">
+        <form id="recaptcha-demo-form" method="POST">
+            <fieldset>
+                <legend>註冊表單</legend>
+                <ul>
+                    <li><label for="input3">Email</label><input class="jfk-textinput" id="input3" type="text" ng-model="input3"></li>
+                    <li><pre>  {{ input3 }} </pre></li>
+                    <li>
+                        <div class="recaptcha-error">
+                            <!-- BEGIN: ReCAPTCHA implementation example. -->
+                            <div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-" data-callback="onSuccess" data-action="action"></div>
+                            <script nonce="QQer5C2siLLht4UcAn599g">
+                                var onSuccess = function(response) {
+                                    var errorDivs = document.getElementsByClassName("recaptcha-error");
+                                    if (errorDivs.length) {
+                                        errorDivs[0].className = "";
+                                    }
+                                    var errorMsgs = document.getElementsByClassName("recaptcha-error-message");
+                                    if (errorMsgs.length) {
+                                        errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                                    }
+                                };
+                            </script>
+                            <!-- Optional noscript fallback. -->
+                            <!-- <noscript>
+                                <div style="width: 302px; height: 462px;"><iframe
+                                        src="js/recaptcha/recaptcha-api/fallback?k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-"
+                                        frameborder="0" scrolling="no"></iframe>
+                                    <div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                            class="g-recaptcha-response"></textarea></div>
+                                </div><br>
+                            </noscript> -->
+                            <!-- END: ReCAPTCHA implementation example. -->
+                            <!-- <div class="recaptcha-error-message">Ã¨Â«â€¹Ã©Â©â€”Ã¨Â­â€°Ã¦â€šÂ¨Ã¤Â¸ï¿½Ã¦ËœÂ¯Ã¨â€¡ÂªÃ¥â€¹â€¢Ã§Â¨â€¹Ã¥Â¼ï¿½Ã£â‚¬â€š</div> -->
+                        </div>
+                    </li>
+                    <li><button id="recaptcha-demo-submit" ng-click="goRegister();">提交</button></li>
+                </ul>
+                <!-- <div ng-app="myApp">
+                    <p>Name: <input type="text" ng-model="name"></p>
+                    <p>You wrote: {{ name }}</p>
+                </div> -->
+            </fieldset>
+        </form>
+    </div>
+</div>

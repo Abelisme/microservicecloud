@@ -99,5 +99,6 @@
 		<module>microservicecloud-api</module><!-- 物件模組-->
 		<module>microservicespringcloud-provider-dept-8001</module><!-- dept服務模組-->
 		<module>microservicecloud-consumer-dept-80</module><!-- 客戶端模組 -->
+		<module>microservicecloud-provider-register-8002</module>
 	</modules>
 </project>
