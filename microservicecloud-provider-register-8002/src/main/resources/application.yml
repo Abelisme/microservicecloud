@@ -9,8 +9,8 @@ spring:
 #    mode: HTML
   datasource:
     url: jdbc:postgresql://localhost:5432/webwithnft?useSSL=false
-    username: dev
-    password: devdev
+    username: xxx
+    password: xxx
     driver-class-name: org.postgresql.Driver
   profiles:
     active: dev, fast

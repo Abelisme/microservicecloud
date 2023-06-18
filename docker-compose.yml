@@ -1,0 +1,24 @@
+version: '3'
+services:
+  microservice-cloud-api:
+    build:
+      context: ./microservicecloud-api
+#    ports:
+#      - 8080:8080
+#  microservicecloud-consumer-dept-80:
+#    build:
+#      context: ./microservicecloud-consumer-dept-80
+#    ports:
+#      - 8081:8081
+#    depends_on:
+#      - microservice-cloud-api
+#  microservicecloud-provider-register-8002:
+#    build:
+#      context: ./microservicecloud-provider-register-8002
+#    depends_on:
+#      - microservice-cloud-api
+#  microservicecloud-provider-dept-8001:
+#    build:
+#      context: ./microservicespringcloud-provider-dept-8001
+#    depends_on:
+#      - microservice-cloud-api
