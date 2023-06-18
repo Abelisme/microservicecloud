@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.will.springcloud-api</groupId>
-	<artifactId>microservicespringcloud-provider-dept-8001</artifactId>
+	<artifactId>microservicecloud-provider-dept-8001</artifactId>
 	<dependencies>
 		<dependency>
 			<!-- 自己定義的api通用包 -->
@@ -67,5 +67,10 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.2.2.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
